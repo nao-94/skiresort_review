@@ -27,7 +27,9 @@
       <h1 class="title is-4" style="font-family: cursive;">Skiresort</h1>
     <% end %>
 
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button is-warning is-light" %>
+    <%= link_to "log_out", destroy_user_session_path, method: :delete, class: "button is-warning is-light" %>
+    <%= link_to "log_in", new_user_session_path, class: "button is-warning is-light" %>
+    <%= link_to "sign_up", new_user_registration_path, class: "button is-warning is-light" %>
     
     <%= yield %>
   </body>
