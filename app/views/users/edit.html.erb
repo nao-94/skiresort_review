@@ -28,10 +28,10 @@
             <%= f.text_area :profile, class: "textarea" %>
           </div>
 
-          <%#div class="field">
+          <div class="field">
             <%= f.label :profile_image, "プロフィール画像", class: "label" %>
-            <%#= f.attachment_field :profile_image, class: "input" %>
-          <%#/div#%>
+            <%= f.attachment_field :profile_image, class: "input" %>
+          </div>
 
           <%= f.submit "update", class: "button is-success" %>
         <% end %>

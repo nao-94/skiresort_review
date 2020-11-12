@@ -2,7 +2,7 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        レビュー詳細
+        review詳細
       </h1>
     </div>
   </div>
@@ -15,7 +15,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <%#= image_tag @review.image %>
+              <%= attachment_image_tag @review, :image %>
             </figure>
           </div>
           <div class="card-content">
@@ -27,7 +27,7 @@
             <div class="content">
               <table class="table is-narrow">
                 <tr>
-                  <th>レビュー内容</th>
+                  <th>review内容</th>
                 </tr>
                 <tr>
                   <td><%= simple_format @review.body %></td>
