@@ -2,11 +2,22 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        新規レビュー投稿
+        New review
       </h1>
     </div>
   </div>
 </section>
+
+<% if @review.errors.any? %>
+  <div class="notification is-danger">
+    <h2><%= pluralize(@review.errors.count, "error") %> prohibited this object from being saved: not successfully</h2>
+    <ul>
+      <% @recipe.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 
 <section class="section">
   <div class="container">
@@ -31,6 +42,13 @@
           <%= f.submit 'Post', class: "button is-success" %>
         <% end %>
       </div>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column">
+      <figure>
+        <div class="main-image"></div>
+      </figure>
     </div>
   </div>
 </section>

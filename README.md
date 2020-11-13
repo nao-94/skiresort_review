@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アプリ名
+Ski resort reviewsite
 
-Things you may want to cover:
+概要実装機能
+スキー場専用のレビューサイト
 
-* Ruby version
+制作背景
+ゲレンデの情報をユーザー目線で正しく把握出来ることを目的として作成しました。
+また、ユーザー目線の情報を視覚的に分かりやすくするため、星評価の実装(投稿者用)、分かりやすかった投稿に対してのいいね機能(閲覧者用)を実装予定としています。
 
-* System dependencies
+実装機能
+・新規投稿・編集・削除機能
+・ユーザー管理機能（gem:devise）
 
-* Configuration
+工夫したポイント
+・文面だけではなく、アイコンなど視覚的かつ直感的に情報を把握しやすい表現を意識しました。
 
-* Database creation
 
-* Database initialization
+使用技術（開発環境）
+・言語：Html,SCSS,Ruby,JavaScript
+・フレームワーク：Ruby on Rails,BULMA
+・DB：mysql
+・サーバー：AWS
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+課題や今後実装したい機能
+・星評価機能
+・いいね機能の追加及びデザイン変更・非同期通信
+・コメント機能（非同期通信）
