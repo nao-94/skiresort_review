@@ -2,10 +2,11 @@ class CreateReviews < ActiveRecord::Migration[6.0]
   def change
     create_table :reviews do |t|
 
-      t.reference :user_id
-      t.string    :title
-      t.text      :body
-      t.string    :image_id
+      t.string     :title,     null: false
+      t.text       :body,      null: false
+      t.string     :image_id
+      t.integer    :snow_quality_id
+      t.integer :user_id, foreign_key: true
 
       t.timestamps
     end
