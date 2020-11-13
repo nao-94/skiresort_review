@@ -14,17 +14,31 @@ Ski resort reviewsite
 ・新規投稿・編集・削除機能
 ・ユーザー管理機能（gem:devise）
 
+DEMO
+【 ユーザー登録画面 】
+https://gyazo.com/73da9ed198aac21b30c3a4ed2011d23f
+
+【 トップページ 】
+https://gyazo.com/68b3adbffb6ceb03e6ba55c2bb33ffae
+ここにいいねの数を表示予定
+
+【 新規投稿画面 】
+https://gyazo.com/4709c3ae7a8abf20ea9770e8704e64d9
+ここにタグ機能と星マークによる5段階評価機能を実装予定
+
 工夫したポイント
 ・文面だけではなく、アイコンなど視覚的かつ直感的に情報を把握しやすい表現を意識しました。
-
+・
 
 使用技術（開発環境）
 ・言語：Html,SCSS,Ruby,JavaScript
 ・フレームワーク：Ruby on Rails,BULMA
 ・DB：mysql
-・サーバー：AWS
 
 課題や今後実装したい機能
 ・星評価機能
 ・いいね機能の追加及びデザイン変更・非同期通信
 ・コメント機能（非同期通信）
+
+ER図
+https://gyazo.com/7c21f653600034eb6f2db7212a991678
