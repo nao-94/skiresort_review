@@ -8,16 +8,18 @@
   </div>
 </section>
 
+
 <% if @review.errors.any? %>
   <div class="notification is-danger">
     <h2><%= pluralize(@review.errors.count, "error") %> prohibited this object from being saved: not successfully</h2>
     <ul>
-      <% @recipe.errors.full_messages.each do |message| %>
+      <% @review.errors.full_messages.each do |message| %>
       <li><%= message %></li>
       <% end %>
     </ul>
   </div>
 <% end %>
+
 
 <section class="section">
   <div class="container">
