@@ -16,7 +16,7 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.user_id = current_user.id
     if @review.save
-      redirect_to review_path(@review)
+      redirect_to review_path(@review), notice: '投稿しました。'
     else
       render :new
     end
@@ -32,7 +32,7 @@ class ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
     if @review.update(review_params)
-      redirect_to review_path(@review)
+      redirect_to review_path(@review), notice: '更新しました。'
     else
       render :edit
     end
