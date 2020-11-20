@@ -16,19 +16,19 @@ Ski resort reviewsite
 
 DEMO
 【 ユーザー登録画面 】
-https://gyazo.com/73da9ed198aac21b30c3a4ed2011d23f
+<img width="1438" alt="スクリーンショット 2020-11-20 16 26 57" src="https://user-images.githubusercontent.com/71437364/99771928-3f55dd00-2b4d-11eb-9cf3-5fd7fc876e35.png">
 
 【 トップページ 】
-https://gyazo.com/68b3adbffb6ceb03e6ba55c2bb33ffae
+<img width="1437" alt="スクリーンショット 2020-11-20 16 25 26" src="https://user-images.githubusercontent.com/71437364/99771784-074e9a00-2b4d-11eb-90eb-82e9773aaadf.png">
 ここにいいねの数を表示予定
 
 【 新規投稿画面 】
-https://gyazo.com/4709c3ae7a8abf20ea9770e8704e64d9
+<img width="1439" alt="スクリーンショット 2020-11-20 16 16 50" src="https://user-images.githubusercontent.com/71437364/99771404-6eb81a00-2b4c-11eb-902c-4cf638624855.png">
 ここにタグ機能と星マークによる5段階評価機能を実装予定
 
 工夫したポイント
 ・文面だけではなく、アイコンなど視覚的かつ直感的に情報を把握しやすい表現を意識しました。
-・
+・ユーザーが求める情報は、なるべくカテゴリー選択で投稿者が投稿出来るように改良する予定。（雪質やゲレンデレベル）
 
 使用技術（開発環境）
 ・言語：Html,SCSS,Ruby,JavaScript
